@@ -7,7 +7,7 @@ var app       =    express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const sequelize = new Sequelize('reminders', 'root', 'Ikr21031994', {
+const sequelize = new Sequelize('reminders', 'root', 'password', {
     host: 'localhost',
     dialect: 'mysql',
     pool: {
